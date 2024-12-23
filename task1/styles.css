@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+}
+
+.containers {
+    width: 100%;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./wyreflow.homepage(1).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to bottom, rgba(25, 21, 21, 0.215), rgba(87, 87, 123, 0.308)); */
+
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: fff;
+    display: flex;
+    color: #fff;
+    /* opacity: 0.5; */
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4vw;
+    font-size: 3vw;
+    line-height: 6vw;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5vw;
+    font-size: 1.5vw;
+    gap: 3vw;
+}
+
+/* General Container2 Styling */
+.container2 {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left and Right Sections */
+.left-container2,
+.right-container2 {
+    width: 50%;
+    height: 100%;
+}
+
+/* Video Section Styling */
+.top-left {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden; /* Prevent video overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4); /* Slight dark background for better text visibility */
+    border-radius: 5px;
+}
+
+.overlay-content h1 {
+    font-size: 1.8vw;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 1.2vw;
+}
+
+/* Down Left Section */
+.down-left {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(112, 70, 70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 1.5vw;
+}
+
+/* Right Sections Styling */
+.top-right,
+.down-right {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 1.5vw;
+}
+
+.top-right {
+    background-color: rgb(9, 126, 227);
+    
+}
+
+.down-right {
+    background-color: rgb(206, 43, 43);
+}
+
+.container3 {
+    /* background-color: yellow; */
+    background-image: url(./homepage-image-03.png);
+    width: 100%;
+    height: 90vh;
+    /* background-image: url('./wyreflow.homepage(1).png'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.over{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    width: 40%;
+    height: 100%;
+    /* font-size: 1.5vw; */
+    padding: 0 5vw;
+    gap: 2vw;
+    line-height: 1.5vw;
+}
+.containers5{
+    #main{
+        height: 100%;
+        width: 100%;
+        background-color: #dadada; 
+        display: grid;
+        grid-template-columns: 25% 25% 50%;  
+        grid-template-rows: 26% 56% 18%;
+    }
+    
+    #left-top-left{
+        /* background-color: crimson; */
+        padding: 30px;
+    }
+    
+    
+    #square{
+        height:25px;
+        width: 25px;
+        rotate: 45deg;
+        background-color: black;
+    }
+    
+    
+    
+    #left-top-right{
+       /* background-color: rgb(56, 19, 83); */
+        justify-self: right;
+        padding: 40px;
+        text-align: right;
+    }
+    
+    #left-top-right h4{
+        /* background-color: #dadada; */
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    #left-top-right h5{
+        /* background-color: red; */
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    
+    #left-center{
+        /* background-color: royalblue; */
+        grid-column: 1/3;
+        padding: 40px;
+    }
+    #left-center h1{
+        font-size: 7vw;
+        text-transform: uppercase;
+        line-height: 6.5vw;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #left-center h1:nth-child(2n){
+        text-align: center;
+    }
+    
+    #left-bottom{
+        /* background-color: chartreuse; */
+        grid-column: 1/3;
+        padding: 40px;
+    }
+    
+    #left-bottom p{
+        width: 70%;
+        font-size: 18px;
+        font-weight: 500;
+        color: #666;
+    }
+    
+    #right{
+        /* background-color: blueviolet; */
+        grid-column: 3;
+        grid-row: 1/4;
+        padding: 40px;
+        padding-right: 150px;
+    }
+    
+    #right video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+    
+    #arrow{
+        position: absolute;
+        top:50%;
+        left: 52%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orangered;
+        padding: 30px ;
+        color: #fff;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #arrow i{
+        font-size: 40px;
+        font-weight: 100;
+    }
+    
+    @media (max-width:600px){
+      #main{
+        grid-template-columns: 50% 50%;  
+        grid-template-rows: 60px 30% 10%;
+    }  
+    #left-top-left{
+        /* background-color: crimson; */
+        padding: 20px;
+    }
+    
+    
+    #square{
+        height:20px;
+        width: 20px;
+        rotate: 45deg;
+        background-color: black;
+    }
+    
+    
+    
+    #left-top-right{
+       /* background-color: rgb(56, 19, 83); */
+        justify-self: right;
+        padding: 40px;
+        text-align: right;
+    }
+    
+    #left-top-right h4{
+        /* background-color: #dadada; */
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    #left-top-right h5{
+        /* background-color: red; */
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    
+    #left-center{
+        /* background-color: royalblue; */
+        grid-column: 1/3;
+        padding: 40px;
+    }
+    #left-center h1{
+        font-size: 7vw;
+        text-transform: uppercase;
+        line-height: 6.5vw;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #left-center h1:nth-child(2n){
+        text-align: center;
+    }
+    
+    #left-bottom{
+        /* background-color: chartreuse; */
+        grid-column: 1/3;
+        padding: 40px;
+    }
+    
+    #left-bottom p{
+        width: 70%;
+        font-size: 18px;
+        font-weight: 500;
+        color: #666;
+    }
+    #right video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+    
+    #arrow{
+        position: absolute;
+        top:50%;
+        left: 52%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orangered;
+        padding: 30px ;
+        color: #fff;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+    }
+  
+    #right{
+        /* background-color: blueviolet; */
+        grid-column: 1/4;
+        grid-row: 4;
+        padding: 20px;
+        padding-right: 150px;
+    }
+    }
+    
+    
+}
+.container7 {
+    /* overflow: hidden; */
+    background: linear-gradient(30deg, rgba(74, 28, 66, 0.677), rgb(49, 49, 188), rgb(154, 36, 36));
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Box Styles */
+.box {
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.9);
+    z-index: 9;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+.container4 {
+    background-color: black;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 3vw;
+
+}
+
+
+
+
+.nav {
+    background-color: black;
+    width: 100%;
+    height: 70px; /* Fixed height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    gap: 2vw;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1vw, 1.2rem); /* Responsive font size */
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #00ffcc;
+}
